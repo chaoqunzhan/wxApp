@@ -1,0 +1,25 @@
+<!--aboutMe.wxml-->
+
+<!--模板-->
+<template name="appList">
+  <view class="list">
+    <view class="appImg">
+      <view class="appImg-1">{{many}}</view>
+      <view class="appImg-2">奖励金（元）</view>
+    </view>
+    <view class="appDec">
+      <view class="appDec-1">{{describe}}</view>
+      <view class="appDec-2">
+        <view style="width:400rpx;">{{updateTime}}</view>
+        <navigator url="../../pages/detail/detail?id={{id}}" hover-class="navigator-hover">
+          <view class="appDec-22">详情</view> 
+        </navigator>
+      </view>
+    </view>
+  </view>
+</template>
+<!--模板循环-->
+<view wx:for="{{appList}}">
+  <template is="appList" data="{{...item}}"/>
+</view>
+<view bindtap="loadMore" data-lastid="{{lastid}}" class="loadMore" hidden="{{moreHidden}}">加载更多...</view>

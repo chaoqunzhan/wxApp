@@ -1,0 +1,78 @@
+.teach{
+  width:100%;
+  font-size:35rpx;
+  background:#ededed;
+}
+
+.slideImage{
+  width:100%;
+}
+
+.subject{
+  width:100%;
+  padding:5rpx 25rpx;
+  margin-top:30rpx;
+  display:flex;
+  flex-direction:row;
+  background-color:#fff;
+}
+
+.subject-title{
+  width:200rpx;
+}
+
+.subject-input{
+  width:500rpx;
+  border:1rpx solid #aaa;
+}
+
+
+.grade-title{
+  width:200rpx;
+}
+
+.grade-group{
+  width:550rpx;
+}
+
+.grade-group label{
+  padding-right:40rpx;
+}
+
+.date-picker{
+  width:500rpx;
+  height:45rpx;
+  border:1rpx solid #aaa;
+}
+
+.date{
+  width:100%;
+  padding:5rpx 25rpx;
+  margin-top:30rpx;
+  display:flex;
+  flex-direction:column;
+  background-color:#fff;
+}
+
+.date-select{
+  width:100%;
+  padding-bottom:10rpx;
+  display:flex;
+  flex-direction:row;
+  background-color:#fff;
+}
+
+.demand{
+  width:500rpx;
+  border:1rpx solid #aaa;
+  height:250rpx;
+}
+
+.submit{
+  color:#fff;
+  font-weight:bold;
+  width:400rpx;
+  margin-top:50rpx;
+  margin-bottom:50rpx;
+  background-color:rgba(0, 183, 255, 0.582);
+}

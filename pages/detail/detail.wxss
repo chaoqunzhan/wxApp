@@ -1,0 +1,65 @@
+/* pages/detail/detail.wxss */
+.detail{
+  width:700rpx;
+  margin:0 auto;
+}
+
+.show{
+  width:100%;
+  height:278rpx;
+  border-radius:10rpx;
+  background: url('https://raw.githubusercontent.com/chaoqunzhan/learngit/master/blog_2018/images/young/bonner/bonner1.gif');
+  background-size: cover;
+}
+
+.show-1{
+  text-align:center;
+  padding-top:180rpx;
+  font-weight:bolder;
+  color:#fa6105;
+}
+
+.explain{
+  margin-top:20rpx;
+  width:100%;
+  background:#d3f9fc;
+  border-radius:10rpx;
+}
+
+.explain-1{
+  color:#808080;
+  font-size:30rpx;
+  padding:10rpx 15rpx;
+}
+
+.step{
+  margin-top:20rpx;
+  width:100%;
+  background:#d3f9fc;
+  border-radius:10rpx;
+}
+
+.step-1{
+  color:#808080;
+  font-size:30rpx;
+  padding:10rpx 15rpx;
+}
+
+.step-1 image{
+  height:250rpx;
+  margin:0 auto; 
+}
+
+.tagList{
+  width:100%;
+  font-size:30rpx;
+  color:#808080;
+  padding:15rpx 25rpx 0rpx 0rpx;
+}
+
+.flag{
+  height:20rpx;
+  width:20rpx;
+  margin-right:10rpx;
+}
+

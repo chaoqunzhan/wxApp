@@ -1,0 +1,124 @@
+<!-- 切图效果 -->
+<view class="teach">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-active-color="{{dotsColor}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slideImage" />
+        </swiper-item>
+    </block>
+  </swiper>
+<!-- 切图效果 -->
+
+<!-- 表单提交界面 -->
+  <form bindsubmit="formSubmit">
+
+    <view class="subject">
+      <view class="subject-title">辅导科目：</view>
+      <input name="subject" placeholder="例如：数学、英语..." class="subject-input"/>
+    </view>
+
+    <!-- 学生年级 -->
+    <view class="subject">
+      <view class="grade-title">学生年级：</view>
+      <radio-group name="grade" class="grade-group">
+        <label><radio value="0"/>高三</label>
+        <label><radio value="1"/>高二</label>
+        <label><radio value="2"/>高一</label>
+        <label><radio value="3"/>初三</label>
+        <label><radio value="4"/>初二</label>
+        <label><radio value="5"/>初一</label>
+        <label><radio value="6"/>考研</label>
+        <label><radio value="7"/>小学</label>
+        <label><radio value="8"/>其他</label>
+      </radio-group>
+    </view>
+    <!-- 学生年级 -->
+
+    <!-- 学生性别 -->
+    <view class="subject">
+      <view class="subject-title">学生性别：</view>
+      <radio-group name="gender" class="grade-group">
+        <label><radio value="0"/>男</label>
+        <label><radio value="1"/>女</label>
+      </radio-group>
+    </view>
+    <!-- 学生性别 -->
+
+    <!-- 日期选择 -->
+    <view class="date">
+      <!-- 开始时间 -->
+      <view class="date-select">
+        <view class="subject-title">开始日期：</view>
+        <picker name="dateStart" mode="date" value="{{dateStart}}" start="2018-08-08" end="2022-09-01" bindchange="bindDateStart">
+          <view class="date-picker">
+            {{dateStart}}
+          </view>
+        </picker>
+      </view>
+
+      <!-- 结束时间 -->
+      <view class="date-select">
+        <view class="subject-title">结束日期：</view>
+        <picker name="dateEnd" mode="date" value="{{dateEnd}}" start="2018-08-08" end="2022-09-01" bindchange="bindDateEnd">
+          <view class="date-picker">
+            {{dateEnd}}
+          </view>
+        </picker>
+      </view>
+    </view>
+    <!-- 日期选择 -->
+
+    <!-- 每周时间 -->
+    <view class="subject">
+      <view class="subject-title">每周时间：</view>
+      <checkbox-group name="checkbox" class="grade-group">
+        <label><checkbox value="0"/>周一</label>
+        <label><checkbox value="1"/>周二</label>
+        <label><checkbox value="2"/>周三</label>
+        <label><checkbox value="3"/>周四</label>
+        <label><checkbox value="4"/>周五</label>
+        <label><checkbox value="5"/>周六</label>
+        <label><checkbox value="6"/>周日</label>
+      </checkbox-group>
+    </view>
+    <!-- 每周时间 -->
+
+    <!-- 时薪 -->
+    <view class="subject">
+      <view class="subject-title">小时薪资：</view>
+      <input name="pay" placeholder="例如：60元/小时" class="subject-input"/>
+    </view>
+    <!-- 时薪 -->
+
+    <!-- 地址 -->
+    <view class="subject">
+      <view class="subject-title">家教地址：</view>
+      <input name="address" placeholder="具体到：区/街道或公交车站/小区" class="subject-input"/>
+    </view>
+    <!-- 地址 -->
+
+    <!-- 联系 -->
+    <view class="subject">
+      <view class="subject-title">联系电话：</view>
+      <input name="contact" placeholder="例如：189********" class="subject-input"/>
+    </view>
+    <!-- 联系-->
+
+    <!-- 要求-->
+    <view class="subject">
+      <view class="subject-title">具体要求：</view>
+      <textarea name="demand" class="demand" auto-focus bindblur="bindTextAreaBlur"  placeholder="例如：家教具体时间/老师专业/老师经验等" />
+    </view>
+    <!-- 要求-->        
+   
+    <view>
+      <button class="submit" formType="submit">点击寻找老师</button>
+    </view>
+  </form>
+</view>

@@ -1,0 +1,49 @@
+{
+  "pages":[
+    "pages/teach/teach",
+    "pages/list/list",
+    "pages/aboutMe/aboutMe",
+    "pages/index/index",
+    "pages/detail/detail",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "爱玩的电科郎",
+    "navigationBarTextStyle":"black"
+  },
+
+  "tabBar": {
+    "color": "#6f6f6f",
+    "selectedColor": "#72c9e2",
+    "backgroundColor":"#fff",
+    "position":"bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "images/home.jpg",
+        "selectedIconPath": "images/home1.jpg"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "骗你赚钱",
+        "iconPath": "images/web.jpg",
+        "selectedIconPath": "images/web1.jpg"
+      },
+      {
+        "pagePath": "pages/teach/teach",
+        "text": "百里挑一",
+        "iconPath": "images/sport.jpg",
+        "selectedIconPath": "images/sport1.jpg"
+      },
+      {
+        "pagePath": "pages/aboutMe/aboutMe",
+        "text": "关于我",
+        "iconPath": "images/me.jpg",
+        "selectedIconPath":"images/me1.jpg"
+      }
+    ]
+  }
+}

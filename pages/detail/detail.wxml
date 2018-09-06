@@ -1,0 +1,31 @@
+<view class="detail">
+  <view class="show">
+    <view class="show-1">{{infoApp.describe}}</view>
+  </view>
+  <view class="explain">
+    <view class="tagList"><image src="{{flag}}" class="flag"/>任务说明</view>
+    <view class="explain-1">任务简单，容易完成，务必输入邀请码（{{infoApp.inMark}}），否则后台无数据，审核不通过</view>
+  </view>
+  <view class="step">
+    <view class="tagList"><image src="{{flag}}" class="flag"/>完成步骤</view>
+    <view class="step-1">
+      <view>
+        <view>step1:{{infoApp.step1}}</view>
+        <image src="{{infoApp.stepImg1}}" mode="aspectFit"></image>
+      </view>
+      <view>
+        <view>step2:{{infoApp.step2}}</view>
+        <image src="{{infoApp.stepImg2}}" mode="aspectFit"></image>
+      </view>
+      <view>
+        <view>step3:{{infoApp.step3}}</view>
+        <image src="{{infoApp.stepImg3}}" mode="aspectFit"></image>
+      </view>
+      <view>
+        <view>step4:{{infoApp.step4}}</view>
+        <image src="{{infoApp.stepImg4}}" mode="aspectFit"></image>
+      </view>
+     
+    </view>  
+  </view>
+</view>

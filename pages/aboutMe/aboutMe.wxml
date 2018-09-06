@@ -1,0 +1,62 @@
+<!--aboutMe.wxml-->
+<view class="about">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-active-color="{{dotsColor}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slideImage" />
+        </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="intro">
+    <view class="contact-list"><image src="{{flag}}" class="flag"/>个人介绍:</view>
+    <view class="intro-font"><text>{{intro}}</text></view>
+  </view>
+
+  <view class="contact">
+    <view class="contact-list"><image src="{{flag}}" class="flag"/>保持联系:</view>
+    <view class="contact-map">
+      <swiper 
+        indicator-dots="{{conIndicatorDots}}"
+        autoplay="{{conAutoplay}}"
+        interval="{{conInterval}}"
+        duration="{{conDuration}}"
+        display-multiple-items="2.5"
+      >
+        <block wx:for="{{conImgUrls}}">
+          <swiper-item>
+              <image src="{{item}}" class="conImage" />
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+  </view>
+
+  <view class="intro">
+    <view class="contact-list"><image src="{{flag}}" class="flag"/>通讯地址:</view>
+    <view class="address">地址：{{address}}</view>
+    <view class="address">邮编：{{youbian}}</view>
+    <view class="address">电话：{{phone}}</view>
+  </view>
+
+  <view class="intro">
+    <view class="contact-list"><image src="{{flag}}" class="flag"/>贴个标签:</view>
+    <view class="perFlag">
+      <view class="perFlag-child" style="margin-left:0;background:rgba(106,96,169,1)">{{perFlag1}}</view>
+      <view class="perFlag-child" style="background:rgba(251,209,75,1)">{{perFlag2}}</view>
+      <view class="perFlag-child" style="background:rgba(247,133,0,1)">{{perFlag3}}</view>
+      <view class="perFlag-child" style="background:rgba(205,75,108,1)">{{perFlag4}}</view>
+      <view class="perFlag-child" style="background:rgba(141,184,66,1)">{{perFlag5}}</view>
+    </view>
+  </view>
+
+  <view class="bottom">小提群技术支持</view>
+
+  
+</view>
