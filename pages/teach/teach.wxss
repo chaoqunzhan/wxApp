@@ -76,3 +76,8 @@
   margin-bottom:50rpx;
   background-color:rgba(0, 183, 255, 0.582);
 }
+
+.button-hover{
+  color:rgb(126, 124, 124);
+  background-color:rgba(129, 217, 252, 0.582);
+}

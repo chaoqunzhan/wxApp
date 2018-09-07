@@ -26,7 +26,7 @@
     <!-- 学生年级 -->
     <view class="subject">
       <view class="grade-title">学生年级：</view>
-      <radio-group name="grade" class="grade-group">
+      <radio-group value="0" name="grade" class="grade-group">
         <label><radio value="0"/>高三</label>
         <label><radio value="1"/>高二</label>
         <label><radio value="2"/>高一</label>
@@ -118,7 +118,7 @@
     <!-- 要求-->        
    
     <view>
-      <button class="submit" formType="submit">点击寻找老师</button>
+      <button class="submit" formType="submit" hover-class="button-hover">点击寻找老师</button>
     </view>
   </form>
 </view>

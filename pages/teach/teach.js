@@ -41,7 +41,15 @@ Page({
       success: function (res) {
         console.log(res)                  
       },
+    }),
+
+    wx.showToast({
+      title: '提交成功',
+      icon: 'success',
+      duration: 2000
     })
+
+    
   }
 
 })

@@ -74,9 +74,9 @@ Page({
   onLoad: function () {
     var that = this
     that.loadData(0);
-    // wx.setNavigationBarTitle({      //title of now
-    //   title: '一起赢赏金'
-    // })
+    wx.setNavigationBarTitle({      //title of now
+      title: '一起赢赏金'
+    })
   },
 
 })
