@@ -1,0 +1,28 @@
+<view class='teacher'>
+    <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-active-color="{{dotsColor}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slideImage" />
+        </swiper-item>
+    </block>
+  </swiper>
+
+  <view class="club">
+    <view class="join">
+      <view class="join-1">
+        <view class="join-11"></view>
+        <view class="join-12">我是老师</view>
+      </view>
+      <view class="join-2">加入我们</view>
+    </view>
+  </view>
+
+
+  
+</view>

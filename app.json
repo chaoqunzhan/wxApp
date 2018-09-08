@@ -1,5 +1,6 @@
 {
   "pages":[
+    "pages/teacher/teacher",
     "pages/teach/teach",
     "pages/list/list",
     "pages/aboutMe/aboutMe",
@@ -27,6 +28,12 @@
         "selectedIconPath": "images/home1.jpg"
       },
       {
+        "pagePath": "pages/teacher/teacher",
+        "text": "Amoy家教",
+        "iconPath": "images/home.jpg",
+        "selectedIconPath": "images/home1.jpg"
+      },
+      {
         "pagePath": "pages/list/list",
         "text": "骗你赚钱",
         "iconPath": "images/web.jpg",
@@ -40,7 +47,7 @@
       },
       {
         "pagePath": "pages/aboutMe/aboutMe",
-        "text": "关于我",
+        "text": "关于我们",
         "iconPath": "images/me.jpg",
         "selectedIconPath":"images/me1.jpg"
       }
