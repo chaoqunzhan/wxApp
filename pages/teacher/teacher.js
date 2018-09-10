@@ -13,5 +13,6 @@ Page({
       '../../images/about/bonner/bonner2.jpg',
       '../../images/about/bonner/bonner3.jpg',
     ],
+    flag: '../../images/football1.png',
   }
 })

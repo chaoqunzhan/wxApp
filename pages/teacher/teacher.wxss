@@ -11,16 +11,22 @@
 .club{
   width:710rpx;
   margin:20rpx;
-  background:#fff;
+  /* background:#fff; */
   /* border:1px solid #789; */
   display:flex;
   flex-direction: row;
 }
 
 .join{
+  background:#fff;
+  box-shadow:0 0 5rpx rgb(82, 223, 129);
   width:350rpx;
   border-radius:10rpx;
-  border:1px solid #789;
+  /* border:1rpx solid rgb(82, 223, 129); */
+}
+
+.join:nth-child(2){
+  margin-left:10rpx;
 }
 
 .join-1{
@@ -28,15 +34,25 @@
   flex-direction: row;
   width:310rpx;
   height:120rpx;
-  border:1px solid #789;
+  /* border:1px solid #789; */
   margin:10rpx 20rpx;
 }
 
 .join-11{
-  background-image:url(../images/teacher/join11.jpg);
+  background-image:url(https://raw.githubusercontent.com/chaoqunzhan/wxApp/master/images/teacher/join11.jpg);
+  background-size:100%;
   width:120rpx;
   height:120rpx;
-  border:1px solid #789;
+  border:1px solid #ec7b3f;
+  border-radius:60rpx;
+}
+
+.join-21{
+  background-image:url(https://raw.githubusercontent.com/chaoqunzhan/wxApp/master/images/teacher/join12.jpg);
+  background-size:100%;
+  width:120rpx;
+  height:120rpx;
+  border:1px solid #0485fd;
   border-radius:60rpx;
 }
 
@@ -47,7 +63,7 @@
   text-align:center;
   font-size:40rpx;
   color:rgb(245, 192, 17);
-  border:1px solid #789;
+  /* border:1px solid #789; */
 }
 
 .join-2{
@@ -56,7 +72,89 @@
   text-align:center;
   line-height:50rpx;
   border-radius:25rpx;
-  color:rgb(82, 223, 129);
-  border:1px solid rgb(82, 223, 129);
+  color:#fff;
+  background:rgb(82, 223, 129);
   margin:10rpx 20rpx;
+}
+
+.teacher-list{
+  width:100%;
+  font-size:30rpx;
+  background-color:#fff;
+  color:#808080;
+  padding:15rpx 25rpx 0 25rpx;
+}
+
+.flag{
+  height:20rpx;
+  width:20rpx;
+  margin-right:10rpx;
+}
+
+.list{
+  width:100%;
+  height:200rpx;
+  display:flex;
+  flex-direction:row;
+  border-bottom:1rpx solid #a0a0a0; 
+   /* border-top:1rpx solid #a0a0a0;  */
+}
+
+.appImg{
+  margin:20rpx;
+  width:160rpx;
+  height:160rpx;
+  border-radius:10rpx;
+  border:1px solid #fa6105;
+}
+
+.appImg-1{
+  width:100%;
+  height:100rpx;
+  font-size:55rpx;
+  background:#fa6105;
+  line-height:100rpx;
+  text-align:center;
+  color:#fff;
+  font-weight:bold;
+}
+
+.appImg-2{
+  width:100%;
+  height:60rpx;
+  color:#fa6105;
+  font-size:25rpx;
+  line-height:60rpx;
+  text-align:center;
+}
+
+.appDec{
+  margin:20rpx;
+  width:510rpx;
+  height:160rpx;
+  display:flex;
+  flex-direction:column;
+}
+
+.appDec-1{
+  width:100%;
+  height:115rpx;
+}
+
+.appDec-2{
+  width:100%;
+  height:45rpx;
+  display:flex;
+  flex-direction:row;
+  font-size:30rpx;
+  line-height:45rpx;
+  color:#a0a0a0;
+}
+
+.appDec-22{
+  border:1px solid #a0a0a0;
+  width:80rpx;
+  height:45rpx;
+  margin:0 auto;text-align:center;
+  border-radius:10rpx;
 }
