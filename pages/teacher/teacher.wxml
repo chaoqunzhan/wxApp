@@ -31,29 +31,32 @@
   </view>
 
   <!--模板-->
-  <template name="appList">
+  <template name="thList">
     <view class="list">
-      <view class="appImg">
-        <view class="appImg-1">{{many}}</view>
-        <view class="appImg-2">奖励金（元）</view>
-      </view>
-      <view class="appDec">
-        <view class="appDec-1">{{describe}}</view>
-        <view class="appDec-2">
-          <view style="width:400rpx;">{{updateTime}}</view>
-          <navigator url="../../pages/detail/detail?id={{id}}" hover-class="navigator-hover">
-            <view class="appDec-22">详情</view> 
-          </navigator>
+      <image class="photo" src="{{photoUrl}}" mode="aspectFill"></image>
+      <view class="thDes">
+        <view class="thName">
+          <view>{{name}}</view> 
+          <view class="thName-2">厦门大学</view>
+        </view>
+        <view class="thCollege">
+          <view>{{college}}</view> 
+          <view class="thCollege-2">{{grade}}</view>
+        </view>
+        <view class="thAuthen">
+          <view>No.{{No}}</view> 
+          <view class="thAuthen-2">{{Authen}}认证</view>
+          <view>{{datetime}}</view> 
         </view>
       </view>
     </view>
   </template>
   <!--模板循环-->
 
-  <view class="club">
+  <view class="recommend">
     <view class="teacher-list"><image src="{{flag}}" class="flag"/>教员推荐:</view>
-    <view wx:for="{{appList}}">
-      <template is="appList" data="{{...item}}"/>
+    <view wx:for="{{thList}}">
+      <template is="thList" data="{{...item}}"/>
     </view>
   </view>
 
