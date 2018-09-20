@@ -15,24 +15,41 @@ Page({
     ],
     flag: '../../images/football1.png',
 
-    thList: [{
-        photoUrl: '../../images/about/bonner/bonner1.jpg',
-        name: '展教员',
-        college: '电子科学系',
-        grade: '研一',
-        No: '0001',
-        Authen: '未',
-        datetime: '2018-09-09'
+  //   stuList: [{ id:"1", grade:"高一", gender:"男", subject:"数学", pay:"50", address:"hsudiah", demand:"siuidad"},
+  //     { id: "1", grade: "高一", gender: "男", subject: "数学", pay: "50", address: "hsudiah", demand: "siuidad" }]
+  },
+
+  onLoad:
+  function(){
+    var that = this;
+    wx.request({
+      url: 'https://www.cqz21.top/weicms/index.php?s=/addon/Teacher/Teacher/thList', //接口地址    
+      data: {},
+      header: {
+        'content-type': 'application/json' // 默认值
       },
-      {
-        photoUrl: '../../images/about/bonner/bonner1.jpg',
-        name: '展教员',
-        college: '电子科学系',
-        grade: '研一',
-        No: '0001',
-        Authen: '未',
-        datetime: '2018-09-09'
+      success: function (res) {
+        console.log(res.data)
+        that.setData({
+          thList: res.data
+        })
       }
-    ]
+    }),
+
+    wx.request({
+      url: 'https://www.cqz21.top/weicms/index.php?s=/addon/Th/Th/stuList', //接口地址    
+      data: {},
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data)
+        var newStuList = res.data;
+        that.setData({
+          stuList: res.data
+        })
+      }
+    })
   }
+
 })

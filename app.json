@@ -22,12 +22,6 @@
     "position":"bottom",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "images/home.jpg",
-        "selectedIconPath": "images/home1.jpg"
-      },
-      {
         "pagePath": "pages/teacher/teacher",
         "text": "Amoy家教",
         "iconPath": "images/home.jpg",
@@ -35,15 +29,9 @@
       },
       {
         "pagePath": "pages/list/list",
-        "text": "骗你赚钱",
+        "text": "软文?鸡汤?",
         "iconPath": "images/web.jpg",
         "selectedIconPath": "images/web1.jpg"
-      },
-      {
-        "pagePath": "pages/teach/teach",
-        "text": "百里挑一",
-        "iconPath": "images/sport.jpg",
-        "selectedIconPath": "images/sport1.jpg"
       },
       {
         "pagePath": "pages/aboutMe/aboutMe",

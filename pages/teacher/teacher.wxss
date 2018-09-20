@@ -77,6 +77,17 @@
   margin:10rpx 20rpx;
 }
 
+.thHover{
+  width:310rpx;
+  height:50rpx;
+  text-align:center;
+  line-height:50rpx;
+  border-radius:25rpx;
+  margin:10rpx 20rpx;
+  color:#808080;
+  background:rgb(192, 241, 209);
+}
+
 .recommend{
   width:750rpx;
   /* margin:20rpx; */
@@ -98,10 +109,9 @@
 
 .list{
   width:100%;
-  height:200rpx;
   display:flex;
   flex-direction:row;
-  padding:20rpx 0rpx 0rpx 20rpx;
+  padding:15rpx 0rpx 15rpx 20rpx;
   background-color:#fff;
   border-bottom:1rpx solid #a0a0a0; 
 }
@@ -166,3 +176,66 @@
   margin:0rpx 40rpx 0rpx 40rpx;
 }
 
+.recommend1{
+  width:750rpx;
+  margin:20rpx 0rpx;
+}
+
+.student-list{
+  width:750rpx;
+  font-size:30rpx;
+  color:#808080;
+  padding:40rpx 0rpx 10rpx 20rpx;
+}
+
+.list1{
+  width:750rpx;
+  display:flex;
+  flex-direction:column;
+  padding:15rpx 0rpx 15rpx 0rpx;
+  background-color:#fff;
+  margin:20rpx 0rpx;
+}
+
+.stuListLine{
+  display:flex;
+  flex-direction:row;
+  width:90%;
+  height:55rpx;
+  margin-left:20rpx;
+  line-height:55rpx;
+}
+
+.stuListLine:nth-child(1) view:nth-child(1){
+  width:100rpx;
+  color:#808080;
+}
+
+.stuListLine:nth-child(1) view:nth-child(2){
+  width:180rpx;
+}
+
+.stuListLine:nth-child(1) view:nth-child(3){
+  color:#0485fd;
+  width:180rpx;
+}
+
+.stuListLine:nth-child(1) view:nth-child(4){
+  color:#fa6105;
+}
+
+.stuListLine:nth-child(3) view:nth-child(1){
+  width:400rpx;
+  font-size:32rpx;
+}
+
+.stuListLine:nth-child(3) view:nth-child(2){
+  color:#808080;
+  font-size:32rpx;
+}
+
+.mapFlag{
+  height:25rpx;
+  width:25rpx;
+  margin-right:10rpx;
+}

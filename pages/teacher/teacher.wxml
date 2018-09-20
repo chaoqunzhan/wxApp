@@ -19,14 +19,18 @@
         <view class="join-11"></view>
         <view class="join-12">我是老师</view>
       </view>
-      <view class="join-2">加入我们</view>
+      <navigator class="join-2" url="../../pages/teach/teach" hover-class="thHover">
+        加入我们
+      </navigator>
     </view>
     <view class="join">
       <view class="join-1">
         <view class="join-21"></view>
         <view class="join-12">我是学生</view>
       </view>
-      <view class="join-2">寻找家教</view>
+      <navigator class="join-2" url="../../pages/teach/teach" hover-class="thHover">
+        寻找家教
+      </navigator>
     </view>
   </view>
 
@@ -60,6 +64,28 @@
     </view>
   </view>
 
+  <!-- 学生循环模板 -->
+  <template name="stuList">
+    <view class="list1">
+      <view class="stuListLine">
+        <view>No.{{id}}</view><view>{{grade}}{{gender}}</view><view>{{subject}}辅导</view><view>{{pay}}元/课时</view>
+      </view> 
+      <view class="stuListLine">
+        <view>要求：</view><view>{{demand}}</view>
+      </view> 
+      <view class="stuListLine">
+        <view><image src="../../images/map.png" class="mapFlag"/>{{address}}</view><view>2018-09-21 12:14</view>
+      </view> 
+    </view>
+  </template>  
+    <!-- 学生循环模板 -->
+
+  <view class="recommend1">
+    <view class="student-list"><image src="{{flag}}" class="flag"/>学员列表:</view>
+    <view wx:for="{{stuList}}">
+      <template is="stuList" data="{{...item}}"/>
+    </view>
+  </view>
 
 
 </view>
