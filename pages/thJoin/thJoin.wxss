@@ -1,0 +1,9 @@
+/* 引入teach的样式 */
+@import "../teach/teach.wxss";  
+.warning{
+  width:92%;
+  color:#fa6105;
+  font-size:25rpx;
+  padding:5rpx 25rpx;
+  margin-top:30rpx;
+}

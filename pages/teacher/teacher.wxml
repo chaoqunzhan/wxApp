@@ -19,7 +19,7 @@
         <view class="join-11"></view>
         <view class="join-12">我是老师</view>
       </view>
-      <navigator class="join-2" url="../../pages/teach/teach" hover-class="thHover">
+      <navigator class="join-2" url="../../pages/thJoin/thJoin" hover-class="thHover">
         加入我们
       </navigator>
     </view>
@@ -68,7 +68,7 @@
   <template name="stuList">
     <view class="list1">
       <view class="stuListLine">
-        <view>No.{{id}}</view><view>{{grade}}{{gender}}</view><view>{{subject}}辅导</view><view>{{pay}}元/课时</view>
+        <view>No.{{id}}</view><view>{{grade}}{{gender}}</view><view>{{subject}}辅导</view><view>{{pay}}元/2小时</view>
       </view> 
       <view class="stuListLine">
         <view>要求：</view><view>{{demand}}</view>

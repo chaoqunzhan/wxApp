@@ -200,19 +200,20 @@
 .stuListLine{
   display:flex;
   flex-direction:row;
-  width:90%;
-  height:55rpx;
+  /* width:90%; */
+  /* height:55rpx; */
   margin-left:20rpx;
   line-height:55rpx;
 }
 
 .stuListLine:nth-child(1) view:nth-child(1){
-  width:100rpx;
+  width:120rpx;
   color:#808080;
 }
 
 .stuListLine:nth-child(1) view:nth-child(2){
   width:180rpx;
+  margin-left:20rpx;
 }
 
 .stuListLine:nth-child(1) view:nth-child(3){
@@ -222,6 +223,14 @@
 
 .stuListLine:nth-child(1) view:nth-child(4){
   color:#fa6105;
+}
+
+.stuListLine:nth-child(2) view:nth-child(1){
+  width:125rpx;
+}
+
+.stuListLine:nth-child(2) view:nth-child(2){
+  width:580rpx;
 }
 
 .stuListLine:nth-child(3) view:nth-child(1){

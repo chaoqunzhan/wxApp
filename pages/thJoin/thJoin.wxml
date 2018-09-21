@@ -1,0 +1,83 @@
+<!-- 切图效果 -->
+<view class="teach">
+  <swiper 
+    indicator-dots="{{indicatorDots}}"
+    indicator-active-color="{{dotsColor}}"
+    autoplay="{{autoplay}}"
+    interval="{{interval}}"
+    duration="{{duration}}"
+  >
+    <block wx:for="{{imgUrls}}">
+        <swiper-item>
+            <image src="{{item}}" class="slideImage" />
+        </swiper-item>
+    </block>
+  </swiper>
+  <!-- 切图效果 -->
+
+  <!-- 温馨提示 -->
+  <view class="warning">
+    <view>注意：</view>
+    <view>1、请真实准确填写以下信息</view>
+    <view>2、上传真实头像，提高找家教成功率</view>
+    <view>3、上传厦大学生卡以通过审核</view>
+    <view>4、所有的证件、联系方式将得到保密处理</view>
+    <view>5、提交完个人信息等待审核，通过后将有工作人员联系并提供意向学员信息</view>
+  </view>
+
+  <!-- 温馨提示 -->
+
+  <!-- 表单提交界面 -->
+  <form bindsubmit="formSubmit">
+
+    <view class="subject">
+      <view class="subject-title">意向学员：</view>
+      <input name="stuNo" placeholder="请填写学员编号，如:No.12" class="subject-input"/>
+    </view>
+
+    <view class="subject">
+      <view class="subject-title">您的姓名：</view>
+      <input name="name" placeholder="务必和证件一致" class="subject-input"/>
+    </view>
+
+    <!-- 老师学院 -->
+    <view class="subject">
+      <view class="grade-title">您的学院：</view>
+      <input name="college" placeholder="例如：外文学院" class="subject-input"/>
+    </view>
+    <!-- 老师学院 -->
+
+    <!-- 老师年级 -->
+    <view class="subject">
+      <view class="grade-title">您的年级：</view>
+      <input name="garde" placeholder="例如：大二" class="subject-input"/>
+    </view>
+    <!-- 老师年级 -->
+
+    <!-- 您的性别 -->
+    <view class="subject">
+      <view class="subject-title">您的性别：</view>
+      <radio-group name="gender" class="grade-group">
+        <label><radio value="0"/>男</label>
+        <label><radio value="1"/>女</label>
+      </radio-group>
+    </view>
+    <!-- 您的性别 -->
+
+    
+    <!-- 联系 -->
+    <view class="subject">
+      <view class="subject-title">联系电话：</view>
+      <input name="contact" placeholder="例如：189********" class="subject-input"/>
+    </view>
+    <view class="subject">
+      <view class="subject-title">QQ/微信：</view>
+      <input name="contact" placeholder="账号" class="subject-input"/>
+    </view>
+    <!-- 联系-->   
+   
+    <view>
+      <button class="submit" formType="submit" hover-class="button-hover">点击加入我们</button>
+    </view>
+  </form>
+</view>

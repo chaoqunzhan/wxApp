@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/teacher/teacher",
+    "pages/thJoin/thJoin",
     "pages/teach/teach",
     "pages/list/list",
     "pages/aboutMe/aboutMe",
