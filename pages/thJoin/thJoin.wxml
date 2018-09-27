@@ -72,7 +72,7 @@
     </view>
     <view class="subject">
       <view class="subject-title">QQ/微信：</view>
-      <input name="contact" placeholder="账号" class="subject-input"/>
+      <input name="QQwx" placeholder="账号" class="subject-input"/>
     </view>
     <!-- 联系-->   
     <!-- 头像 -->

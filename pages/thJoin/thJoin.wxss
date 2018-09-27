@@ -26,5 +26,5 @@
   width:500rpx;
   height:305rpx;
   border-radius:20rpx;
-  background-image:url(https://raw.githubusercontent.com/chaoqunzhan/wxApp/master/images/teacher/addPhoto.png);
+  background-image:url(https://raw.githubusercontent.com/chaoqunzhan/wxApp/master/images/teacher/authen.png);
 }
