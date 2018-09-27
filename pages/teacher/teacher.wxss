@@ -173,7 +173,7 @@
 
 .thAuthen-2{
   color:#fa6105;
-  margin:0rpx 40rpx 0rpx 40rpx;
+  margin:0rpx 115rpx 0rpx 40rpx;
 }
 
 .recommend1{
@@ -234,7 +234,7 @@
 }
 
 .stuListLine:nth-child(3) view:nth-child(1){
-  width:400rpx;
+  width:520rpx;
   font-size:32rpx;
 }
 

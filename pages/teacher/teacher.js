@@ -29,9 +29,13 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        // console.log(res.data)
+        console.log(res.data)
+        var newThList = res.data
+        newThList.forEach(function(item){
+          item.datetime = item.datetime.slice(0, 10)
+        })
         that.setData({
-          thList: res.data
+          thList: newThList
         })
       }
     }),
@@ -43,7 +47,7 @@ Page({
         'content-type': 'application/json' // 默认值
       },
       success: function (res) {
-        // console.log(res.data)
+        //console.log(typeof(res.data))
         var newStuList = res.data
         newStuList.forEach(function(item){
           var newGender = parseInt(item.gender)
@@ -64,10 +68,12 @@ Page({
             case 7: item.grade = '小学'; break;
             case 8: item.grade = '其他'; break;
           }
+          item.datetime = item.datetime.slice(0,10)
+          console.log(typeof(item.datetime))
         })
         // console.log(newStuList)
         that.setData({
-          stuList: res.data
+          stuList: newStuList
         })
       }
     })

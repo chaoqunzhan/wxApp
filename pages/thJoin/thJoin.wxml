@@ -75,7 +75,16 @@
       <input name="contact" placeholder="账号" class="subject-input"/>
     </view>
     <!-- 联系-->   
-   
+    <!-- 头像 -->
+    <view class="subject">
+      <view class="subject-title">上传头像：</view>
+      <image class="perPhoto" bindtap="chPhoto" mode="aspectFill" src="{{tempFilePaths}}"></image>
+    </view>
+    <!-- 头像 -->
+
+
+
+
     <view>
       <button class="submit" formType="submit" hover-class="button-hover">点击加入我们</button>
     </view>

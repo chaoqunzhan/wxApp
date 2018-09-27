@@ -27,7 +27,12 @@ Page({
 
   formSubmit: function (e) {
     // console.log('form携带数据为：', e.detail.value)
+    var datetime = Date.now().toString()
+    console.log('datetime', typeof(datetime))
+ 
     var formData = e.detail.value
+    formData.datetime = datetime;
+    // console.log(formData.datetime)
     console.log('form：', formData)
 
     var that = this

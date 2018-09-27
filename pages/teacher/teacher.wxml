@@ -74,7 +74,7 @@
         <view>要求：</view><view>{{demand}}</view>
       </view> 
       <view class="stuListLine">
-        <view><image src="../../images/map.png" class="mapFlag"/>{{address}}</view><view>2018-09-21 12:14</view>
+        <view><image src="../../images/map.png" class="mapFlag"/>{{address}}</view><view>{{datetime}}</view>
       </view> 
     </view>
   </template>  

@@ -12,23 +12,29 @@ Page({
     ],
   },
 
-  bindDateStart: function (e) {               //开始日期操作
-    var that = this
-    this.setData({
-      dateStart: e.detail.value
-    })
-  },
-
-  bindDateEnd: function (e) {               //结束日期操作
-    this.setData({
-      dateEnd: e.detail.value
+  chPhoto: function() {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        const tempFilePaths = res.tempFilePaths
+        console.log(tempFilePaths)
+        that.setData({
+          tempFilePaths: res.tempFilePaths
+        })
+      }
     })
   },
 
   formSubmit: function (e) {
     // console.log('form携带数据为：', e.detail.value)
+    var datetime = Date.now();
+    console.log('datetime', datetime)
     var formData = e.detail.value
-    console.log('form：', formData)
+    // console.log('form：', formData)
 
     var that = this
     wx.request({
