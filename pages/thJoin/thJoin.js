@@ -29,6 +29,23 @@ Page({
     })
   },
 
+  chCard: function () {
+    var that = this;
+    wx.chooseImage({
+      count: 1,
+      sizeType: ['original', 'compressed'],
+      sourceType: ['album', 'camera'],
+      success(res) {
+        // tempFilePath可以作为img标签的src属性显示图片
+        // const authenFilePaths = res.tempFilePaths
+        // console.log(tempFilePaths)
+        that.setData({
+          authenFilePaths: res.tempFilePaths
+        })
+      }
+    })
+  },
+
   formSubmit: function (e) {
     // console.log('form携带数据为：', e.detail.value)
     var datetime = Date.now();

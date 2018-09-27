@@ -82,6 +82,13 @@
     </view>
     <!-- 头像 -->
 
+    <!-- 认证 -->
+    <view class="subject">
+      <view class="subject-title">学  生  卡：</view>
+      <image class="chCard" bindtap="chCard" mode="aspectFill" src="{{authenFilePaths}}"></image>
+    </view>
+    <!-- 认证 -->
+
 
 
 
