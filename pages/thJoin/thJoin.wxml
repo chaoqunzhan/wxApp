@@ -32,7 +32,7 @@
 
     <view class="subject">
       <view class="subject-title">意向学员：</view>
-      <input name="stuNo" placeholder="请填写学员编号，如:No.12" class="subject-input"/>
+      <input name="No" placeholder="请填写学员编号，如:No.12" class="subject-input"/>
     </view>
 
     <view class="subject">
